@@ -1,9 +1,16 @@
 function findMinAndRemove(array){
-  describe('#findMinAndRemove', function() {
-    it("should return the smallest element of an array", function() {
-      let array = [2, 3, 4, 5, 6, 7]
-      expect(findMinAndRemove(array)).toEqual(2)
-    });
+  
+  function minAndRemove(array) {
+  let min = array[0];
+  let minIndex = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] < min) {
+      min = array[i];
+      minIndex = i;
+    }
+  }
+  array.splice(minIndex, 1);
+  return min;
 }
 
 function selectionSort(array){
