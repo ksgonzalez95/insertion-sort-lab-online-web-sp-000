@@ -1,5 +1,5 @@
 function findMinAndRemove(array){
-  
+
   function minAndRemove(array) {
   let min = array[0];
   let minIndex = 0;
